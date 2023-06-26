@@ -129,11 +129,16 @@
 
     .hero .logo{
         height: auto;
+        width: 100%;
+        display: grid;
+        place-content: center;
     }
 
     .hero .logo img{
-        margin: 0;
+        margin: auto;
         margin-top: 20px;
+        margin-right: 25px;
+        box-shadow: 0 0 17px -2px #000;
     }
 
     .carousel img{
@@ -166,7 +171,6 @@
 
 footer {
     width: 100%;
-    /* height: 270px; */
     margin-top: 70px;
     background-color: #000;
     color: #fff;
@@ -185,29 +189,47 @@ footer div{
     align-items: flex-start;
 }
 
-footer div a {
+footer div ul li {
+    list-style: none;
+    background-color: rgb(255, 184, 6);
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    height: 23px;
+    width: 320px;
+    border-bottom-left-radius: 30px;
+    transition: .3s ease-in;
+}
+
+footer div ul li a {
     text-decoration: none;
-    color: #fff;
-    font-size: large;
+    color: #000;
+    font-weight: 600;
+    font-size: 21px;
     transition: .3s ease;
-    margin-bottom: 10px;
-    padding-bottom: 5px;
+    margin-left: 60px;
     transition: .3s ease;
 }
 
-footer div a::before {
-    content: "";
-    display: inline-block;
-    width: 5px;
-    height: 5px;
-    background: #fff;
-    border-radius: 100px;
-    margin-right: 5px;
-    margin-bottom: 3px;
+footer div ul li span{
+    background-color: #fff;
+    width: 50px;
+    height: 50px;
+    display: grid;
+    place-content: center;
+    border-radius: 1000px;
+    margin-top: -13px;
+    margin-right: -25px;
+    box-shadow: 0 0 10px -2px #000;
+}
+
+footer div ul li span ion-icon{
+    color: #000;
 }
 
 footer div a:hover{
-    color: blueviolet;
+    color: #fff;
 }
 
 .fade-in-out {
