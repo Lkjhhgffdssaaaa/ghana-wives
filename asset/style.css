@@ -85,6 +85,8 @@
 .main .div img{
     width: 500px;
     height: auto;
+  border: 6px solid gold;
+  border-radius: 4px;
 }
 
 @media only screen and (max-width: 1000px) {
