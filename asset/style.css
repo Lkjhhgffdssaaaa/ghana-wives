@@ -13,6 +13,8 @@
 .hero{
     width: 100%;
     height: 700px;
+    position: relative;
+    top: 0;
 }
 
 .hero a {
@@ -22,6 +24,9 @@
 .hero a img {
     width: 100%;
     height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
 }
 
 
@@ -39,7 +44,6 @@
 .welcome h1 {
     font-family: 'Great Vibes', cursive;
     font-size: 60px;
-    /* color: #fff; */
     letter-spacing: 3px;
 }
 
@@ -85,8 +89,8 @@
 .main .div img{
     width: 500px;
     height: auto;
-  border: 6px solid gold;
-  border-radius: 4px;
+    border: 6px solid gold;
+    border-radius: 4px;
 }
 
 @media only screen and (max-width: 1000px) {
@@ -95,28 +99,26 @@
         flex-direction: column;
         justify-content: center;
         align-items: center;
+        /* height: 350px; */
+        position: relative;
+        top: 0;
     }
 
-    .hero .logo{
-        height: auto;
+    .hero a img {
         width: 100%;
-        display: grid;
-        place-content: center;
-    }
-
-    .hero .logo img{
-        margin: auto;
-        margin-top: 20px;
-        margin-right: 25px;
-        box-shadow: 0 0 17px -2px #000;
-    }
-
-    .carousel img{
-        width: 300px;
+        height: 100%;
+        margin-top: 0;
     }
 
     .main {
         padding: 0;
+        display: grid;
+        place-items: center;
+        /* overflow-y: none; */
+        background: rgb(209, 209, 209);
+        
+        width: 100%;
+        height: max-content;
     }
 
     .main .div {
@@ -132,10 +134,21 @@
     .main .div div {
         margin-bottom: 20px;
         width: 450px;
+        color: #000;
     }
 
     .main .div img{
         width: 450px;
+    }
+}
+
+@media only screen and (max-width: 800px){
+    .hero {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 300px;
     }
 }
 
