@@ -35,10 +35,12 @@
     display: grid;
     place-content: center;
     background-image: url('./img/background.jpeg');
+    border-top: 6px solid gold;
+    border-bottom: 6px solid gold;
     height: 180px;
     opacity: .9;
-    margin-top: 100px;
-    margin-bottom: 100px;
+    margin-top: 30px;
+    margin-bottom: 30px;
 }
 
 .welcome h1 {
@@ -138,7 +140,7 @@
     }
 
     .main .div img{
-        width: 450px;
+        width: 400px;
     }
 }
 
@@ -149,6 +151,10 @@
         justify-content: center;
         align-items: center;
         height: 300px;
+    }
+
+    .main .div img{
+        width: 350px;
     }
 }
 
@@ -174,7 +180,7 @@ footer div{
 
 footer div ul li {
     list-style: none;
-    background-color: rgb(255, 184, 6);
+    background-color: gold;
     margin-bottom: 20px;
     display: flex;
     justify-content: space-between;
